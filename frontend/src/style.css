@@ -1,0 +1,93 @@
+:root {
+  --main-color: #c84b31;
+  --dark-color: #2e2925;
+  --paper-color: #fffdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--dark-color);
+  background: #f3eee5;
+  font-family: Arial, sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #a93b25;
+  border-color: #a93b25;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background-color: var(--paper-color);
+  border: 0;
+}
+
+.brand-mark {
+  margin-bottom: 8px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.recipe-page {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 60px;
+}
+
+.recipe-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d8cdbd;
+}
+
+.recipe-card {
+  background-color: var(--paper-color);
+  border: 0;
+  border-left: 5px solid var(--main-color);
+}
+
+.recipe-author {
+  color: var(--main-color);
+}
+
+.recipe-text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.empty-message {
+  padding: 32px;
+  background-color: var(--paper-color);
+  border-radius: 6px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .recipe-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
